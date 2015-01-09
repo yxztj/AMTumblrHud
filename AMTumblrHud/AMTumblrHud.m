@@ -5,7 +5,7 @@
 
 #import "AMTumblrHud.h"
 
-#define kShowHideAnimateDuration 0.2
+#define kShowHideAnimateDuration 0.5
 
 
 @implementation AMTumblrHud {
@@ -111,7 +111,7 @@
     [UIView animateWithDuration:kShowHideAnimateDuration animations:^{
         self.alpha = 0;
     } completion:^(BOOL finished) {
-        [self removeFromSuperview];
+        //[self removeFromSuperview];
     }];
 }
 
